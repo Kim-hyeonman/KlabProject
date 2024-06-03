@@ -9,8 +9,6 @@ import axios from 'axios';
 //     withCredentials: true
 // })
 
-const PROXY = window.location.hostname === 'localhost' ? '' : '/proxy';
-const URL = `${PROXY}`;
 // Axios 인스턴스를 생성합니다. App.jsx
 const API = axios.create({
   baseURL: 'http://52.78.72.107:8080/',

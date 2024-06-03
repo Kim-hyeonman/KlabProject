@@ -130,7 +130,7 @@ function WritingDiary() {
         const URL = `${PROXY}`;
         try {
             // await API.post("/dutch", {
-            await axios.post("https://52.78.72.107:8080/gpt/diary/dutch", null, { params: params, withCredentials: true }).then(res => {
+            await axios.post("http://52.78.72.107:8080/gpt/diary/dutch", null, { params: params, withCredentials: true }).then(res => {
                 setLoading(false);
                 console.log(res);
                 setDiary(res.data);

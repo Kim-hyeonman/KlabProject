@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/KlabProject/static/css/main.260d92e4.css",
-    "main.js": "/KlabProject/static/js/main.9123d7b4.js",
+    "main.js": "/KlabProject/static/js/main.82816377.js",
     "static/js/453.2ef5181b.chunk.js": "/KlabProject/static/js/453.2ef5181b.chunk.js",
     "static/media/diary4.png": "/KlabProject/static/media/diary4.afcff3a951e43de58936.png",
     "static/media/diary.png": "/KlabProject/static/media/diary.0ab9fca3c8c80858704e.png",
@@ -12,11 +12,11 @@
     "static/media/PoetsenOne-Regular.ttf": "/KlabProject/static/media/PoetsenOne-Regular.22ae511e03fc2ed8d264.ttf",
     "index.html": "/KlabProject/index.html",
     "main.260d92e4.css.map": "/KlabProject/static/css/main.260d92e4.css.map",
-    "main.9123d7b4.js.map": "/KlabProject/static/js/main.9123d7b4.js.map",
+    "main.82816377.js.map": "/KlabProject/static/js/main.82816377.js.map",
     "453.2ef5181b.chunk.js.map": "/KlabProject/static/js/453.2ef5181b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.260d92e4.css",
-    "static/js/main.9123d7b4.js"
+    "static/js/main.82816377.js"
   ]
 }

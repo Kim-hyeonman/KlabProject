@@ -12,7 +12,7 @@ import axios from 'axios';
 // Axios 인스턴스를 생성합니다. App.jsx
 
 const API = axios.create({
-  baseURL: 'http://52.78.72.107:8080/',
+  baseURL: 'https://52.78.72.107:8080/',
   });
   
   // 요청 인터셉터 추가

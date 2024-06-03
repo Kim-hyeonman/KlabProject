@@ -3,7 +3,11 @@
   to = "http://52.78.72.107:8080/:splat"
   status = 200
   force = true
-
+[[redirects]]
+  from = "/api/*"
+  to = "http://52.78.72.107:8080/:splat"
+  status = 200
+  force = true
 [[redirects]]
   from = "/*"
   to = "/index.html"

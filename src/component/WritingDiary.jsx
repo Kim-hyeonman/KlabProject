@@ -126,10 +126,11 @@ function WritingDiary() {
             'userInput': keywordString,
             'todayDate': date
         }
-
+        const PROXY = window.location.hostname === 'localhost' ? '' : '/proxy';
+        const URL = `${PROXY}`;
         try {
             // await API.post("/dutch", {
-            await axios.post("http://52.78.72.107:8080/gpt/diary/dutch", null, { params: params, withCredentials: true }).then(res => {
+            await axios.post(URL+"/gpt/diary/dutch", null, { params: params, withCredentials: true }).then(res => {
                 setLoading(false);
                 console.log(res);
                 setDiary(res.data);

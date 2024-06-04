@@ -129,7 +129,7 @@ function WritingDiary() {
         
         try {
             // await API.post("/dutch", {
-            await axios.post("/gpt/diary/dutch", null, { params: params, withCredentials: true }).then(res => {
+            await axios.post(URL+"/gpt/diary/dutch", null, { params: params, withCredentials: true }).then(res => {
                 setLoading(false);
                 console.log(res);
                 setDiary(res.data);

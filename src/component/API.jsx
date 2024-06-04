@@ -11,14 +11,13 @@ import axios from 'axios';
 
 // Axios 인스턴스를 생성합니다. App.jsx
 
-const host = window.location.hostname === "localhost" 
-  ? 'http://52.78.72.107:8080'
-  : "api";
+const PROXY = window.location.hostname === 'localhost' ? '' : '/proxy';
+const URL = `${PROXY}`;
 
-export const API = axios.create({
-  baseURL: host,
-  });
-  
+//api 요청 인스턴스
+const API = axios.create({
+  baseURL: URL,
+}); 
   // 요청 인터셉터 추가
   API.interceptors.request.use(
     function (config) {

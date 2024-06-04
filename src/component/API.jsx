@@ -11,8 +11,12 @@ import axios from 'axios';
 
 // Axios 인스턴스를 생성합니다. App.jsx
 
-const API = axios.create({
-  baseURL: 'http://52.78.72.107:8080/',
+const host = window.location.hostname === "localhost" 
+  ? 'http://52.78.72.107:8080'
+  : "api";
+
+export const API = axios.create({
+  baseURL: host,
   });
   
   // 요청 인터셉터 추가

@@ -112,7 +112,7 @@ function WritingDiary() {
         let params;
 
         for (let i = 0; i < selectedKey.length; i++) {
-            if (i == 0) {
+            if (i === 0) {
                 keywordString += selectedKey[i];
             }
             else {
@@ -155,7 +155,7 @@ function WritingDiary() {
     const sendDiary = async () => {
         //error: put method 없음
 
-        if (diary.length != 0) {
+        if (diary.length !== 0) {
             try {
                 await axios.post('/diaries', {
                     'userId': 3812456,

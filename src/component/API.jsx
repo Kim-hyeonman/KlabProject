@@ -11,8 +11,6 @@ import axios from 'axios';
 
 // Axios 인스턴스를 생성합니다. App.jsx
 
-const PROXY = window.location.hostname === 'localhost' ? '' : '/proxy';
-const URL = `${PROXY}`;
 
 //api 요청 인스턴스
 const API = axios.create({
